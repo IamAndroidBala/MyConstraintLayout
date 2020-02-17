@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyConstraintLayout</string>
+    <string name="welcome"> Welcome</string>
+    <string name="center">  Center</string>
+    <string name="basic">   Basic</string>
+    <string name="guide">   Guideline</string>
+    <string name="basics">  Basic Arrangement</string>
 </resources>

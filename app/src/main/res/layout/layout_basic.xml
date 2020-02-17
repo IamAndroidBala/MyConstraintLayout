@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/common_16">
+
+    <TextView
+        android:id="@+id/tvBasicHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/basics"
+        android:textSize="@dimen/text_heading"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBasicHeading" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/btnThree"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/btnFour"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOne"
+        app:layout_constraintVertical_bias="0.500" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_creator="1"
+        android:layout_marginTop="50dp"
+        android:hint="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@+id/tvBasicHeading"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
