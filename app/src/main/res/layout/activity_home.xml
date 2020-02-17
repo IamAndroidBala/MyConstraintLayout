@@ -23,6 +23,8 @@
     <Button
         android:id="@+id/btnTwo"
         android:text="@string/center"
+        android:tag="layout_center"
+        android:onClick="onClickShow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
